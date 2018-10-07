@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var tableView: UITableView!
+class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +17,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    var data = Data.info
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return Data.info.count
-    }
+//    var data = Data.info
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//            return Data.info.count
+//    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "New Topic")
-        cell?.textLabel?.text = Data.info[indexPath.row].0
-        cell?.detailTextLabel?.text = Data.info[indexPath.row].1
-        return cell!
-    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "New Topic")
+//        cell?.textLabel?.text = Data.info[indexPath.row].0
+//        cell?.detailTextLabel?.text = Data.info[indexPath.row].1
+//        return cell!
+//    }
 }
 

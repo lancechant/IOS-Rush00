@@ -17,6 +17,7 @@
 		C54EA1B52167907C00A4E96C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EA1B42167907C00A4E96C /* loginViewController.swift */; };
 		C54EA1B72167955B00A4E96C /* WTC-Prooject-Image-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C54EA1B62167955B00A4E96C /* WTC-Prooject-Image-4.jpg */; };
 		C54EA1B92167988A00A4E96C /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EA1B82167988A00A4E96C /* tableViewController.swift */; };
+		C5AA77DA2169E630003A26F7 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AA77D92169E630003A26F7 /* TopicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C54EA1B42167907C00A4E96C /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		C54EA1B62167955B00A4E96C /* WTC-Prooject-Image-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WTC-Prooject-Image-4.jpg"; sourceTree = "<group>"; };
 		C54EA1B82167988A00A4E96C /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		C5AA77D92169E630003A26F7 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				C54007A92167670800E07E31 /* Assets.xcassets */,
 				C54007AB2167670800E07E31 /* LaunchScreen.storyboard */,
 				C54007AE2167670800E07E31 /* Info.plist */,
+				C5AA77D92169E630003A26F7 /* TopicViewController.swift */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				C54EA1B52167907C00A4E96C /* loginViewController.swift in Sources */,
 				C54007A52167670200E07E31 /* ViewController.swift in Sources */,
+				C5AA77DA2169E630003A26F7 /* TopicViewController.swift in Sources */,
 				C54EA18E216780C800A4E96C /* dataArray.swift in Sources */,
 				C54007A32167670200E07E31 /* AppDelegate.swift in Sources */,
 				C54EA1B92167988A00A4E96C /* tableViewController.swift in Sources */,
