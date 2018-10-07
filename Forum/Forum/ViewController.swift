@@ -8,26 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var code: String = "code"
+var accessToken: String = "token"
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "WTC-4-crop.jpg"))
+//        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "WTC-4-crop.jpg"))
+        let apiCall = ApiController();
+        apiCall.getToken();
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    var data = Data.info
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//            return Data.info.count
-//    }
+    var data = Data.info
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return Data.info.count
+    }
     
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "New Topic")
-//        cell?.textLabel?.text = Data.info[indexPath.row].0
-//        cell?.detailTextLabel?.text = Data.info[indexPath.row].1
-//        return cell!
-//    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "New Topic")
+        cell?.textLabel?.text = Data.info[indexPath.row].0
+        cell?.detailTextLabel?.text = Data.info[indexPath.row].1
+        return cell!
+    }
 }
 
