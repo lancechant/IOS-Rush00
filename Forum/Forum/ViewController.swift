@@ -8,6 +8,8 @@
 
 import UIKit
 
+var code: String = "code"
+var accessToken: String = "token"
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
@@ -15,7 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "WTC-4-crop.jpg"))
+//        view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "WTC-4-crop.jpg"))
+        let apiCall = ApiController();
+        apiCall.getToken();
         // Do any additional setup after loading the view, typically from a nib.
     }
     
